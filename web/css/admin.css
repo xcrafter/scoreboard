@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: menuFont;
+    src:url(../fonts/Alegreya.ttf);
+	}
+	
+.heads
+{
+float: left;
+margin-top: 5%;
+color: cadetblue;
+font-weight: bold;
+font-size: 18px;
+}
+#menu_apply
+{
+	margin-top:-2%;
+	padding-left:5%;
+	padding-right:3%;
+	display:none;
+	
+}
+#menu_apply ul
+{
+	margin-left:0px;
+	padding-left:0px;
+	border:1px solid #ccc;
+	width: 90%;
+	border-top:none;
+	
+	
+}
+#menu_apply ul li
+{
+	background-color: white;
+
+color: #999;
+	list-style-type:none;
+	margin-left:0px;
+	padding-left:8%;
+	padding-top:3%;
+	padding-bottom:3%;
+	font-size:17px;
+	border-bottom:1px solid #ccc;
+	font-family:menuFont;
+	font-weight:700;
+	transition:all ease;
+	transition-duration:500ms;
+}
+#menu_apply ul li:hover
+{
+	background-color:#E4E8E8;
+	padding-left:10%;
+}
+.blocks
+{
+	background-color:#f7f7f7;
+width: 90%;
+padding-top: 10%;
+padding-bottom: 10%;
+padding-left: 3%;
+margin: 2%;
+margin-right: 0px;
+border: 1px solid #ECE7E7;
+border-left: 4px solid rgb(200, 190, 190);
+border-bottom: 4px solid #ccc;
+border-radius: 5px;
+webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  visibility:hidden;
+}
+/*
+.blocks:hover
+{
+ background-color:#f8f8f8;
+}
+*/
+.shadow99
+{
+  	position:relative;       
+    -webkit-box-shadow:0 1px 1px rgba(1, 2, 3, 0.1), 0 0 40px rgba(0, 0, 1, 0.1) ;
+       -moz-box-shadow:0 1px 1px rgba(1, 2, 3, 0.1), 0 0 40px rgba(0, 0, 1, 0.1) ;
+            box-shadow:0 1px 1px rgba(1, 2, 3, 0.1), 0 0 40px rgba(0, 0, 1, 0.1) ;
+}
+.shadow99:before, .shadow99:after
+{
+	content:"";
+    position:absolute; 
+    z-index:-1;
+    -webkit-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    -moz-box-shadow:0 0 20px rgba(0,0,0,0.8);
+    box-shadow:0 0 20px rgba(0,0,0,0.8);
+    top:0;
+    bottom:0;
+    left:10px;
+    right:10px;
+    -moz-border-radius:100px / 10px;
+    border-radius:100px / 10px;
+} 
+.shadow99:after
+{
+	right:10px; 
+    left:auto;
+    -webkit-transform:skew(8deg) rotate(3deg); 
+       -moz-transform:skew(8deg) rotate(3deg);     
+        -ms-transform:skew(8deg) rotate(3deg);     
+         -o-transform:skew(8deg) rotate(3deg); 
+            transform:skew(8deg) rotate(3deg);
+}
+.overview
+{
+    font-size: large;
+    margin-left: 9%;
+    color: dimgrey;
+}
+.row_pad
+{
+    padding-top:2%;
+
+}
+.overview_value
+{
+    font-size: 25px;
+}
+.modal {
+    display:    none;
+    position:   fixed;
+    z-index:    1000;
+    top:        0;
+    left:       0;
+    height:     100%;
+    width:      100%;
+    background: rgba( 255, 255, 255, .8 )
+    url('http://i.stack.imgur.com/FhHRx.gif')
+    50% 50%
+    no-repeat;
+}
+#score
+{
+    font-size: 35px;
+    text-align: center;
+}
+.tb
+{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+body.loading {
+    overflow: hidden;
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
